@@ -1,0 +1,11 @@
+@mixin screen-view($min-screen) {
+  @media only screen and (min-width: $min-screen) {
+    @content;
+  }
+}
+@mixin typography($f-fam, $f-size, $f-wght, $f-color) {
+  font-family: $f-fam;
+  font-size: $f-size;
+  font-weight: $f-wght;
+  color: $f-color;
+}

@@ -1,0 +1,21 @@
+.first-section {
+  height: 100vh;
+  background-image: url("../img/sec-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &__header {
+
+  }
+  &__body {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  @include screen-view($min-tablet) {
+    padding: 3rem 9rem 7rem 9rem;
+    &__body {
+      grid-template-columns: auto auto auto;
+      grid-column-gap: 2rem;
+    }
+  }
+}

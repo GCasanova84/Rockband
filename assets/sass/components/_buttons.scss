@@ -1,0 +1,15 @@
+.button {
+  color: $white;
+  font-family:'lekton', sans-serif;
+  font-size: $medium;
+  font-style: normal;
+  font-weight: 400;
+  background-color: transparent;
+  border:1px solid $white;
+  padding: 1em 3em;
+  &:hover{
+    color: black;
+    background-color: white;
+    border-color: white;
+  }
+}

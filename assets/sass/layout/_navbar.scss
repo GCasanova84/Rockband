@@ -1,0 +1,41 @@
+.nav-container {
+  width: 100vw;
+  position: fixed;
+  padding: 0.75rem 5rem;
+  & .nav-bar {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    &__brand {
+      width: 4.5rem;
+    }
+    &__toggler {
+
+    }
+    &__menu {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @include screen-view($min-tablet) {
+    background-color: transparent;
+    & .nav-bar {
+      &__brand {
+
+      }
+      &__toggler {
+        display: none;
+      }
+      &__menu {
+        width: auto;
+        flex-direction: row;
+        & .menu-item {
+          margin-left: 3rem;
+          text-shadow: 2px 2px 2px #222222;
+        }
+      }
+    }
+  }
+}

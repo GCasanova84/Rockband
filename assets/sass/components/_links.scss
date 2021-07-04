@@ -1,0 +1,7 @@
+a.menu-item {
+  text-decoration: none;
+  color: $white;
+  &:hover {
+    color: rgba(255,255,255,.8);
+  }
+}

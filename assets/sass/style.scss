@@ -7,8 +7,12 @@
 @import 'base/reset';
 @import 'base/typography';
 //layout
+@import 'layout/navbar';
+@import 'layout/header';
+@import 'layout/first-section';
 //components
-//@import 'components/component';
+@import 'components/buttons';
+@import 'components/links';
 //pages
 @import 'pages/index';
 //themes
