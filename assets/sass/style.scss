@@ -10,9 +10,15 @@
 @import 'layout/navbar';
 @import 'layout/header';
 @import 'layout/first-section';
+@import 'layout/gallery';
+@import 'layout/footer';
 //components
 @import 'components/buttons';
 @import 'components/links';
+@import 'components/footerlinks';
+@import 'components/arrow';
+@import 'components/hidden';
+@import 'components/anchor';
 //pages
 @import 'pages/index';
 //themes

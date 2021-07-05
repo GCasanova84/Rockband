@@ -1,7 +1,9 @@
 .nav-container {
   width: 100vw;
   position: fixed;
-  padding: 0.75rem 5rem;
+  background-color: $dark-black;
+  padding: 0.75rem 2rem;
+  z-index: 3;
   & .nav-bar {
     display: flex;
     flex-flow: row wrap;
@@ -11,29 +13,65 @@
       width: 4.5rem;
     }
     &__toggler {
-
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.75rem;
+      position: relative;
+      & .toggler-button {
+        z-index: 4;
+        opacity: 0;
+        -webkit-transform: scale(2);
+        -ms-transform: scale(2);
+            transform: scale(2);
+      }
+      & .toggler-icon {
+        position: absolute;
+        color: $white;
+        -webkit-transform: scale(2);
+        -ms-transform: scale(2);
+            transform: scale(2);
+      }
     }
     &__menu {
       width: 100vw;
       display: flex;
       flex-direction: column;
+      padding-top: 0.5rem;
+      & .menu-item {
+        margin: 0.5rem 0;
+      }
     }
   }
   @include screen-view($min-tablet) {
-    background-color: transparent;
+    padding: 0.75rem 4rem;
     & .nav-bar {
-      &__brand {
-
-      }
       &__toggler {
         display: none;
       }
       &__menu {
         width: auto;
         flex-direction: row;
+        padding-top: 0;
         & .menu-item {
           margin-left: 3rem;
+        }
+      }
+    }
+  }
+  @include screen-view($min-laptop) {
+    background-color: transparent;
+    transition: background-color 0.25s, padding 1s;
+    transition-timing-function: ease-in;
+    padding: 0 5rem;
+    & .nav-bar {
+      padding: 0.75rem 0;
+      &__menu {
+        & .menu-item {
           text-shadow: 2px 2px 2px #222222;
+          transition-property: opacity;
+          transition-duration: 0.5s;
+          transition-timing-function: ease-in;
         }
       }
     }

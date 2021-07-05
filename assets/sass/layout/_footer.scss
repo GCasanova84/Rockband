@@ -1,0 +1,22 @@
+.footer {
+  background-color: $deep-gray;
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+  &__icons {
+    display: flex;
+    flex-direction: column;
+    & .footer-item {
+      margin: 1.5rem 0;
+    }
+  }
+  @include screen-view($min-tablet) {
+    padding: 7rem 0;
+    &__icons {
+      flex-direction: row;
+      & .footer-item {
+        margin: 0 2rem;
+      }
+    }
+  }
+}

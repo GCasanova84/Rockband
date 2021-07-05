@@ -1,7 +1,19 @@
 h1, h2 {
   @include typography($lekton, $xx-large, $f-regular, $white);
 }
+h3 {
+  @include typography($lekton, $x-large, $f-regular, $white);
+  @include screen-view($min-tablet) {
+    font-size: $large;
+  }
+  @include screen-view($min-laptop) {
+    font-size: $x-large;
+  }
+}
 p {
   @include typography($lekton, $large, $f-regular, $white);
   text-shadow: 2px 2px 2px #222222;
+}
+.nav-bar__menu {
+  @include typography($lekton, $medium, $f-regular, $white);
 }

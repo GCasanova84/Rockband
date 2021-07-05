@@ -1,0 +1,79 @@
+.gallery {
+  background-color: $deep-gray;
+  &__header {
+    padding: 4rem 3rem;
+    h2 {
+      text-align: center;
+    }
+    p {
+      text-align: justify;
+    }
+  }
+  @include screen-view($min-tablet) {
+    &__header {
+      padding: 3rem 5rem;
+      h2 {
+        text-align: left;
+      }
+    }
+    &__body {
+      height: 100vh;
+      display: flex;
+      flex-flow: row wrap;
+      & .gallery-item {
+        flex-grow: 1;
+        flex-basis: 50vw;
+        height: 33.33vh;
+      }
+    }
+  }
+  @include screen-view($min-laptop) {
+    &__header {
+      padding: 4rem 9rem;
+      p {
+        max-width: 50rem;
+      }
+    }
+    &__body {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      flex-flow: row wrap;
+      & .gallery-item {
+        flex-grow: 1;
+        flex-basis: 30vw;
+        height: 50vh;
+      }
+    }
+  }
+}
+#pic1:hover ~ #hidden {
+  background-image: url("../img/gallery-1.jpg");
+  display: block;
+  opacity: 1;
+}
+#pic2:hover ~ #hidden {
+  background-image: url("../img/gallery-2.jpg");
+  display: block;
+  opacity: 1;
+}
+#pic3:hover ~ #hidden {
+  background-image: url("../img/gallery-3.jpg");
+  display: block;
+  opacity: 1;
+}
+#pic4:hover ~ #hidden {
+  background-image: url("../img/gallery-4.jpg");
+  display: block;
+  opacity: 1;
+}
+#pic5:hover ~ #hidden {
+  background-image: url("../img/gallery-5.jpg");
+  display: block;
+  opacity: 1;
+}
+#pic6:hover ~ #hidden {
+  background-image: url("../img/gallery-6.jpg");
+  display: block;
+  opacity: 1;
+}

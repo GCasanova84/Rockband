@@ -1,0 +1,16 @@
+#hidden {
+  width: 70vw;
+  height: 90vh;
+  position: absolute;
+  display: none;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: 1px solid $white;
+  opacity: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

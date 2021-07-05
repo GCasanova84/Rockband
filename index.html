@@ -26,7 +26,8 @@
           <img src="assets/img/Logo-01.svg" alt="logo">
         </div>
         <div class="nav-bar__toggler">
-
+          <input class="toggler-button" id="checkbox" type="checkbox" name="" value="">
+          <label class="toggler-icon" for="checkbox"><i class="fas fa-bars"></i></label>
         </div>
         <div class="nav-bar__menu">
           <a class="menu-item" href="#inicio">Inicio</a>
@@ -35,33 +36,83 @@
         </div>
       </div>
     </nav>
-    <header class="header">
+    <header id="inicio" class="header">
       <div class="header__content d-none d-md-block">
         <h1>ROCKBAND</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <button class="button" type="button" name="button">Lorem ipsum</button>
       </div>
     </header>
+    <a id="bandas" class="anchor"></a>
     <section class="first-section">
       <div class="first-section__header">
         <h2>THE BAND</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.r</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
       <div class="first-section__body">
         <div class="section-item">
-          <img src="assets/img/metallica.jpg" alt="">
-          <h3>Metallica</h3>
+          <div class="section-item__image">
+            <img src="assets/img/metallica.jpg" alt="">
+          </div>
+          <div class="section-item__body">
+            <h3><a href="#">Metallica</a></h3>
+          </div>
         </div>
         <div class="section-item">
-          <img src="assets/img/radiohead.jpg" alt="">
-          <h3>Radiohead</h3>
+          <div class="section-item__image">
+            <img src="assets/img/radiohead.jpg" alt="">
+          </div>
+          <div class="section-item__body">
+            <h3><a href="#">Radiohead</a></h3>
+          </div>
         </div>
         <div class="section-item">
-          <img src="assets/img/tool.jpg" alt="">
-          <h3>Tool</h3>
+          <div class="section-item__image">
+            <img src="assets/img/tool.jpg" alt="">
+          </div>
+          <div class="section-item__body">
+            <h3><a href="#">Tool</a></h3>
+          </div>
         </div>
       </div>
+      <hr class="d-md-none" style="margin:0 2rem;border:1.5px solid white;border-radius:1.5px;">
     </section>
+    <section class="gallery">
+      <div class="gallery__header">
+        <h2>GALLERY</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <a id="galeria" class="anchor"></a>
+      <div class="gallery__body">
+        <div id="pic1" class="gallery-item">
+          <img src="assets/img/gallery-1.jpg" alt="">
+        </div>
+        <div id="pic2" class="gallery-item">
+          <img src="assets/img/gallery-2.jpg" alt="">
+        </div>
+        <div id="pic3" class="gallery-item">
+          <img src="assets/img/gallery-3.jpg" alt="">
+        </div>
+        <div id="pic4" class="gallery-item">
+          <img src="assets/img/gallery-4.jpg" alt="">
+        </div>
+        <div id="pic5" class="gallery-item">
+          <img src="assets/img/gallery-5.jpg" alt="">
+        </div>
+        <div id="pic6" class="gallery-item">
+          <img src="assets/img/gallery-6.jpg" alt="">
+        </div>
+        <div id="hidden" class="hidden-gallery"></div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__icons">
+        <a class="footer-item" href="#"><i class="fab fa-instagram"></i></a>
+        <a class="footer-item" href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a class="footer-item" href="#"><i class="fab fa-facebook-f"></i></a>
+        <a class="footer-item" href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </footer>
     <!-- Bootstrap JS -->
     <script src="assets/js/bootstrap/dist/js/bootstrap.bundle.min.js" charset="utf-8"></script>
     <!-- JS -->

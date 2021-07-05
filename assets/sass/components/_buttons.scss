@@ -1,15 +1,14 @@
 .button {
-  color: $white;
-  font-family:'lekton', sans-serif;
-  font-size: $medium;
-  font-style: normal;
-  font-weight: 400;
+  @include typography($lekton, $medium, $f-regular, $white);
   background-color: transparent;
   border:1px solid $white;
   padding: 1em 3em;
+  transition-property: all;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in;
   &:hover{
-    color: black;
-    background-color: white;
-    border-color: white;
+    color: $dark-black;
+    font-weight: $f-bold;
+    background-color: $white;
   }
 }

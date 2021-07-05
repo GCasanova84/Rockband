@@ -1,0 +1,14 @@
+a.footer-item {
+  background-color: $white;
+  color: $deep-gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  font-size: $x-large;
+  &:hover {
+    opacity: .8;
+  }
+}

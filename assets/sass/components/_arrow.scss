@@ -1,0 +1,11 @@
+.arrow {
+  position: absolute;
+  bottom: 5vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  -webkit-transform: scale(2.5);
+      -ms-transform: scale(2.5);
+          transform: scale(2.5);
+  color: $white;
+}
