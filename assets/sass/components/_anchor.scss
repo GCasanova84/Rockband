@@ -2,9 +2,9 @@
   display: block;
   visibility: hidden;
   position: relative;
-  top: -96px;  
+  top: -96px;
 }
-#galeria {
+#fotos {
   @include screen-view($min-laptop) {
     top: 1px;
   }

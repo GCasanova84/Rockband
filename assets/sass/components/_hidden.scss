@@ -1,16 +1,40 @@
-#hidden {
-  width: 70vw;
-  height: 90vh;
-  position: absolute;
-  display: none;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  border: 1px solid $white;
-  opacity: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+
+.hidden-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+    & .hidden-gallery {
+      width: 70vw;
+      height: 90vh;
+      border: 1px solid $white;
+      opacity: 0;
+      transition-property: all;
+      transition-duration: 0.75s;
+      transition-delay: 1.75s;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+}
+.pic1 {
+  background-image: url("../img/gallery-1.jpg");
+}
+.pic2 {
+  background-image: url("../img/gallery-2.jpg");
+}
+.pic3 {
+  background-image: url("../img/gallery-3.jpg");
+}
+.pic4 {
+  background-image: url("../img/gallery-4.jpg");
+}
+.pic5 {
+  background-image: url("../img/gallery-5.jpg");
+}
+.pic6 {
+  background-image: url("../img/gallery-6.jpg");
 }

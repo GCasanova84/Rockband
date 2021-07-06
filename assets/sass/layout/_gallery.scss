@@ -35,7 +35,6 @@
       }
     }
     &__body {
-      position: relative;
       height: 100vh;
       display: flex;
       flex-flow: row wrap;
@@ -46,34 +45,4 @@
       }
     }
   }
-}
-#pic1:hover ~ #hidden {
-  background-image: url("../img/gallery-1.jpg");
-  display: block;
-  opacity: 1;
-}
-#pic2:hover ~ #hidden {
-  background-image: url("../img/gallery-2.jpg");
-  display: block;
-  opacity: 1;
-}
-#pic3:hover ~ #hidden {
-  background-image: url("../img/gallery-3.jpg");
-  display: block;
-  opacity: 1;
-}
-#pic4:hover ~ #hidden {
-  background-image: url("../img/gallery-4.jpg");
-  display: block;
-  opacity: 1;
-}
-#pic5:hover ~ #hidden {
-  background-image: url("../img/gallery-5.jpg");
-  display: block;
-  opacity: 1;
-}
-#pic6:hover ~ #hidden {
-  background-image: url("../img/gallery-6.jpg");
-  display: block;
-  opacity: 1;
 }

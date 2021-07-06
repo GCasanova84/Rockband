@@ -10857,6 +10857,9 @@ p {
   .nav-container .nav-bar {
     padding: 0.75rem 0;
   }
+  .nav-container .nav-bar__brand {
+    pointer-events: auto;
+  }
   .nav-container .nav-bar__menu .menu-item {
     text-shadow: 2px 2px 2px #222222;
     transition-property: opacity;
@@ -11020,7 +11023,6 @@ p {
     max-width: 50rem;
   }
   .gallery__body {
-    position: relative;
     height: 100vh;
     display: flex;
     flex-flow: row wrap;
@@ -11030,42 +11032,6 @@ p {
     flex-basis: 30vw;
     height: 50vh;
   }
-}
-
-#pic1:hover ~ #hidden {
-  background-image: url("../img/gallery-1.jpg");
-  display: block;
-  opacity: 1;
-}
-
-#pic2:hover ~ #hidden {
-  background-image: url("../img/gallery-2.jpg");
-  display: block;
-  opacity: 1;
-}
-
-#pic3:hover ~ #hidden {
-  background-image: url("../img/gallery-3.jpg");
-  display: block;
-  opacity: 1;
-}
-
-#pic4:hover ~ #hidden {
-  background-image: url("../img/gallery-4.jpg");
-  display: block;
-  opacity: 1;
-}
-
-#pic5:hover ~ #hidden {
-  background-image: url("../img/gallery-5.jpg");
-  display: block;
-  opacity: 1;
-}
-
-#pic6:hover ~ #hidden {
-  background-image: url("../img/gallery-6.jpg");
-  display: block;
-  opacity: 1;
 }
 
 .footer {
@@ -11146,21 +11112,50 @@ a.footer-item:hover {
   color: #FFF;
 }
 
-#hidden {
+.hidden-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.hidden-container .hidden-gallery {
   width: 70vw;
   height: 90vh;
-  position: absolute;
-  display: none;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
   border: 1px solid #FFF;
   opacity: 0;
+  transition-property: all;
+  transition-duration: 0.75s;
+  transition-delay: 1.75s;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.pic1 {
+  background-image: url("../img/gallery-1.jpg");
+}
+
+.pic2 {
+  background-image: url("../img/gallery-2.jpg");
+}
+
+.pic3 {
+  background-image: url("../img/gallery-3.jpg");
+}
+
+.pic4 {
+  background-image: url("../img/gallery-4.jpg");
+}
+
+.pic5 {
+  background-image: url("../img/gallery-5.jpg");
+}
+
+.pic6 {
+  background-image: url("../img/gallery-6.jpg");
 }
 
 .anchor {
@@ -11171,9 +11166,34 @@ a.footer-item:hover {
 }
 
 @media only screen and (min-width: 992px) {
-  #galeria {
+  #fotos {
     top: 1px;
   }
+}
+
+.start-stop {
+  float: right;
+  position: relative;
+}
+.start-stop .start {
+  position: absolute;
+  top: -6.25rem;
+  right: 0;
+  transition: right 1s linear 2s, top 2s;
+  -webkit-transform: scale(4.5);
+  -ms-transform: scale(4.5);
+  transform: scale(4.5);
+}
+.start-stop .stop {
+  position: absolute;
+  pointer-events: none;
+  top: -6.25rem;
+  right: 0;
+  transition: right 1s linear 2s, text-shadow 0.5s linear 1.75s, top 2s;
+  -webkit-transform: scale(4.5);
+  -ms-transform: scale(4.5);
+  transform: scale(4.5);
+  opacity: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

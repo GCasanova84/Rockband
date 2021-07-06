@@ -66,6 +66,9 @@
     padding: 0 5rem;
     & .nav-bar {
       padding: 0.75rem 0;
+      &__brand {
+        pointer-events: auto;        
+      }
       &__menu {
         & .menu-item {
           text-shadow: 2px 2px 2px #222222;
